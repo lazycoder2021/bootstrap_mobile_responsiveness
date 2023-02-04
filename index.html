@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .col-md-6{
+            height:400px;
+            border:1px solid black;
+        }
+
+        ol li{
+            font-size:16px;
+        }
+
+        @media only screen and (max-width:500px){
+            .row{
+                display:flex;
+                flex-direction:column;
+                background-color: blue; 
+            }
+
+            .col-md-6{
+                height:500px;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <h2><center>Making Bootstrap Row Grid Mobile Responsive</center></h2>
+    <br/>
+
+    <ol>
+        <li>Make the 'row'class 'display:flex' and 'flex-direction:column'</li>
+        <li>All the divs inside row (be it col-md-6 or col-md-4 or col-md-2) would align themselves one below the other in mobile screen</li>
+        <li>Mobile Responsive Code Image below</li>
+        <img src="media_query.jpg"/>
+    </ol>
+    <div class="container">
+        ========================row========================================================================================================================
+        <div class="row">
+            <div class="col-md-6">col-md-6</div>
+            <div class="col-md-6">col-md-6</div>
+        </div>
+    </div>
+
+</body>
+</html>
